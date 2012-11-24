@@ -13,6 +13,7 @@
 		
 		
 		<link rel="stylesheet" href="css/fontface/Droid-Sans/stylesheet.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/fontface/Droid-Serif/stylesheet.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/fontface/DejaVu-Sans-Mono/stylesheet.css" type="text/css" media="screen" />
 			
 		<link rel="stylesheet" href="css/st.css" type="text/css" media="screen" />
@@ -34,9 +35,9 @@
 		        $(".tweet").tweet({
 		            username: "the_antlr_guy",
 		            join_text: "auto",
-		            avatar_size: 70,
-		            count: 3,
-		            template: "{avatar}{text}{time}",
+		            avatar_size: 25,
+		            count: 4,
+		            template: "{avatar}{text}",
 		            loading_text: "loading tweets..."
 		        });
 		    });
@@ -52,13 +53,7 @@
 <a id="index" href="index.html">StringTemplate</a>
 
 <nav>
-	<ul>
-		<li><a href="#">Download<span>v4.5</span></a></li>
-		<li><a href="#">Doc</a></li>
-		<li><a href="#">About ST</a></li>
-		<li><a href="#">Support</a></li>	
-		<li><a href="#">Bugs</a></li>	
-	</ul>
+  <script src="scripts/topnav.js"></script>
 </nav>
 
 
@@ -76,10 +71,17 @@
 	
 <h2>What is StringTemplate?</h2>
 
-<p><strong>StringTemplate</strong> is a java template engine (with ports for C#, Python, Ruby, and Scala) for generating source code, web pages, emails, or any other formatted text output. StringTemplate is particularly good at multi-targeted code generators, multiple site skins, and internationalization/localization. StringTemplate also generates this website and powers the <a href="#">ANTLR v3 code generator</a>.</p>
+<p><strong>StringTemplate</strong> is a java template engine (with
+ports for C#, Python, Ruby, and Scala) for generating source code, web
+pages, emails, or any other formatted text output. StringTemplate is
+particularly good at code generators, multiple site skins, and
+internationalization / localization. StringTemplate also generates this
+website and powers <a href="http://www.antlr.org">ANTLR</a>.</p>
 
 <div id="terence"><img src="images/terence.jpg" alt="terence" />
-<strong>Terence Parr</strong> is the maniac behind String and has been working on language tools since 1989. He is a professor of computer science at the UoSF. 
+<strong>Terence Parr</strong> is the maniac behind ANTLR and has been
+working on language tools since 1989. He is a professor of computer
+science at the <a href="http://www.cs.usfca.edu/~parrt">University of San Francisco</a>.
 </div>
 	
 </div><!--/col3-->
@@ -97,19 +99,24 @@
 <div class="screen" id="quickstart">
 
 	<div class="slide">
-	
+OS X	
 <pre>
 <span class="dollar">$</span> <span class="cmd">cd</span> /usr/local/lib
-<span class="dollar">$</span> <span class="cmd">wget</span> http://antlr.org/download/antlr4-complete.jar
-<span class="dollar">$</span> <span class="cmd">export</span> <span class="equals">CLASSPATH=</span><span class="path">".:/usr/local/lib/antlr-4.0-complete.jar:$CLASSPATH"</span>
-<span class="dollar">$</span> <span class="cmd">alias</span> <span class="equals">antlr4=</span><span class="path">'java -jar /usr/local/lib/antlr-4.0-complete.jar'</span>
-<span class="dollar">$</span> <span class="cmd">alias</span> <span class="equals">grun=</span><span class="path">'java org.antlr.v4.runtime.misc.TestRig'</span>
+<span class="dollar">$</span> <span class="cmd">wget</span> http://stringtemplate.org/download/ST-4.0.6.jar
+<span class="dollar">$</span> <span class="cmd">export</span> <span class="equals">CLASSPATH=</span><span class="path">".:/usr/local/lib/ST-4.0.6.jar:$CLASSPATH"</span>
 </pre>
 	
-	</div><!--/windows-->
+	</div>
 	
-	<div class="slide"><code>Linux</code></div>
-	<div class="slide"><code>Mac</code></div>
+	<div class="slide">
+Linux
+<pre>
+<span class="dollar">$</span> <span class="cmd">cd</span> /usr/local/lib
+<span class="dollar">$</span> <span class="cmd">wget</span> http://stringtemplate.org/download/ST-4.0.6.jar
+<span class="dollar">$</span> <span class="cmd">export</span> <span class="equals">CLASSPATH=</span><span class="path">".:/usr/local/lib/ST-4.0.6.jar:$CLASSPATH"</span>
+</pre>
+</div>
+	<div class="slide"><code>Windows</code></div>
 
 </div><!--/screen-->
 
@@ -118,25 +125,15 @@
 	<div class="slide">
 		
 		<pre class="pre3">
-grammar Expr;		
-prof:	(expr NEWLINE)* ;
-expr:	expr ('*'|'/') expr
-|	expr ('+'|'-') expr
-|	INT
-|	'(' expr ')'
-;
+sample template
 		</pre>
 		
 		<pre class="pre3">
-$ antrl4 Expr.g4
-$ javac Expr*.java
-$ grun EXpr prof -gui
-100+2*34
-^D
+java code that uses it
 		</pre>
 		
 		<pre class="pre3">
-<img src="images/sample3.png" alt="sample3" width="112" height="166" />
+output
 		</pre>
 		
 		
@@ -233,19 +230,8 @@ $ grun EXpr prof -gui
 </div><!--/wrapper-->	
 
 <footer>
-	
-	<ul>
-		<li><a href="index.html">Index</a></li>
-		<li><a href="#">Download</a></li>
-		<li><a href="#">Doc</a></li>
-		<li><a href="#">About StringTemplate</a></li>
-		<li><a href="#">Support</a></li>	
-		<li><a href="#">Bugs</a></li>	
-		<li><a href="#">V3</a></li>	
-	</ul>
-	
-	<small>&copy; Copyright StringTemplate / Terence Parr 2012</small>
-	
+<script src="scripts/bottomnav.js"></script>
+<small>&copy; Copyright StringTemplate / Terence Parr 2012</small>
 </footer>
 
 <script src="scripts/functions.js"></script>	
