@@ -6,4 +6,4 @@ document.write("<li><a href='about.html'>About StringTemplate</a></li>\n");
 document.write("<li><a href='support.html'>Support</a></li>  \n");
 document.write("<li><a href='https://github.com/antlr/stringtemplate4/issues'>Bugs</a></li> \n");
 document.write("</ul>\n");
-document.write("<small>&copy; Copyright StringTemplate / Terence Parr 2012</small>");
+document.write("<small>&copy; Copyright StringTemplate / Terence Parr 2013</small>");
