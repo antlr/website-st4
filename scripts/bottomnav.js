@@ -1,7 +1,7 @@
 document.write("<ul>");
 document.write("<li><a href='index.html'>Home</a></li>");
 document.write("<li><a href='download.html'>Download</a></li>\n");
-document.write("<li><a href='http://www.antlr.org/wiki/display/ST4/StringTemplate+4+Documentation'>Doc</a></li>\n");
+document.write("<li><a href='https://theantlrguy.atlassian.net/wiki/display/ST4/StringTemplate+4+Documentation'>Doc</a></li>\n");
 document.write("<li><a href='about.html'>About StringTemplate</a></li>\n");
 document.write("<li><a href='support.html'>Support</a></li>  \n");
 document.write("<li><a href='https://github.com/antlr/stringtemplate4/issues'>Bugs</a></li> \n");
