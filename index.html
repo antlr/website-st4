@@ -120,22 +120,19 @@ Linux
 
 	<div class="slide">
 		
-		<pre class="pre3">
-sample template
+		<pre class="pre2">
+import org.stringtemplate.v4.*;
+...
+ST hello = new ST("Hello, &lt;name>!");
+hello.add("name", "World");
+String output = hello.render();
+System.out.println(output);
 		</pre>
 		
-		<pre class="pre3">
-java code that uses it
+		<pre class="pre2">
+Hello, World!
 		</pre>
-		
-		<pre class="pre3">
-output
-		</pre>
-		
-		
 	</div>
-	<div class="slide"><code>Linux</code></div>
-	<div class="slide"><code>Mac</code></div>
 	
 </div><!--/screen-->
 
