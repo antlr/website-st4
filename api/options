@@ -1,0 +1,27 @@
+-classpath
+'/Users/parrt/.m2/repository/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/Users/parrt/antlr/code/stringtemplate4/src'
+-Xdoclint:none
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/parrt/antlr/code/stringtemplate4/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'StringTemplate 4 4.3.4-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/Users/parrt/antlr/code/stringtemplate4/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'StringTemplate 4 4.3.4-SNAPSHOT API'
